@@ -1,0 +1,30 @@
+{
+  "name": "zipper-pack",
+  "version": "0.1.0",
+  "description": "Recursively repackages array values into provided properties via zipper-merge.",
+  "author": "Corey Ward <corey@hey.com>",
+  "repository": "https://github.com/coreyward/zipper-pack",
+  "license": "MPL-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.13.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "node ./build.js"
+  }
+}
